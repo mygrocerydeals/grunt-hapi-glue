@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/dennisfoconnor/grunt-hapi-glue#readme",
   "devDependencies": {
+    "glue": "^3.0.0",
     "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.3"
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-nodeunit": "^0.4.1"
   }
 }
