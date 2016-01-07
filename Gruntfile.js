@@ -28,7 +28,7 @@ module.exports = function(grunt) {
             plugin: './index.js'
           }]
         },
-        options: {
+        glueOptions: {
           relativeTo: path.resolve('./test/fixtures/')
         }
       },
@@ -47,13 +47,13 @@ module.exports = function(grunt) {
             plugin: './index.js'
           }]
         },
-        options: {
+        glueOptions: {
           relativeTo: path.resolve('./test/fixtures/')
         }
       },
       externalManifest: {
         manifest: path.resolve('./test/fixtures/manifest.json'),
-        options: {
+        glueOptions: {
           relativeTo: path.resolve('./test/fixtures/')
         }
       }
