@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       runningServers[this.target].disconnect();
     }
 
-    server = require('child_process').fork(path.resolve('./lib/server'));
+    server = require('child_process').fork(__dirname + '/../lib/server');
     runningServers[this.target] = server;
 
     var options = this.options();
