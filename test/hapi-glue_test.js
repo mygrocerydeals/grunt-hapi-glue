@@ -19,5 +19,11 @@ exports.hapiGlue = {
       test.equal(response.statusCode, 200, 'should respond 200');
       test.done();
     });
+  },
+  externalManifest: function(test) {
+    http.get('http://localhost:8003', function(response){
+      test.equal(response.statusCode, 200, 'should respond 200');
+      test.done();
+    });
   }
 };

@@ -50,6 +50,12 @@ module.exports = function(grunt) {
         options: {
           relativeTo: path.resolve('./test/fixtures/')
         }
+      },
+      externalManifest: {
+        manifest: path.resolve('./test/fixtures/manifest.json'),
+        options: {
+          relativeTo: path.resolve('./test/fixtures/')
+        }
       }
     }
   });

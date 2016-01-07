@@ -1,0 +1,8 @@
+{
+  "connections": [{
+    "port": 8003
+  }],
+  "registrations": [{
+    "plugin": "./index.js"
+  }]
+}
