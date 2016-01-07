@@ -13,24 +13,45 @@ module.exports = function(grunt) {
       }
     },
     nodeunit: {
-     tests: ['test/*_test.js'],
-   },
-   clean: {
-     tests: ['tmp']
-   },
-   hapiGlue: {
-     basic: {
-       manifest: {
-         connections: [{
-           port: 8000
-         }],
-         registrations: [{ plugin: './index.js'}]
-       },
-       options: {
-         relativeTo: path.resolve('./test/fixtures/')
-       }
-     }
-   }
+      tests: ['test/*_test.js'],
+    },
+    clean: {
+      tests: ['tmp']
+    },
+    hapiGlue: {
+      basic: {
+        manifest: {
+          connections: [{
+            port: 8000
+          }],
+          registrations: [{
+            plugin: './index.js'
+          }]
+        },
+        options: {
+          relativeTo: path.resolve('./test/fixtures/')
+        }
+      },
+      multiple: {
+        manifest: {
+          connections: [{
+              labels: ['web'],
+              port: 8001
+            }, {
+              labels: ['api'],
+              port: 8002
+            }
+
+          ],
+          registrations: [{
+            plugin: './index.js'
+          }]
+        },
+        options: {
+          relativeTo: path.resolve('./test/fixtures/')
+        }
+      }
+    }
   });
   grunt.loadTasks('tasks');
   // These plugins provide necessary tasks.
