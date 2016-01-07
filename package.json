@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dennisfoconnor/grunt-hapi-glue.git"
+    "url": "git://github.com/mygrocerydeals/grunt-hapi-glue.git"
   },
   "keywords": [
     "grunt",
@@ -18,12 +18,12 @@
   "author": "Dennis F O'Connor",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dennisfoconnor/grunt-hapi-glue/issues"
+    "url": "https://github.com/mygrocerydeals/grunt-hapi-glue/issues"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
   },
-  "homepage": "https://github.com/dennisfoconnor/grunt-hapi-glue#readme",
+  "homepage": "https://github.com/mygrocerydeals/grunt-hapi-glue#readme",
   "devDependencies": {
     "glue": "^3.0.0",
     "grunt": "^0.4.5",
