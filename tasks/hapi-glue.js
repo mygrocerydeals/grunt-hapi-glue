@@ -35,7 +35,7 @@ module.exports = function(grunt) {
             if(error) {
               grunt.fatal('Hapi server failed to start with error: ' + error);
             }
-            runningServers[target] = this;
+            runningServers[target] = server;
             if (!options.keepAlive) {
               done();
             }
